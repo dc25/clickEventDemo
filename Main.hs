@@ -8,10 +8,10 @@ main = mainWidget $ mdo
 
     let 
         -- an Event that fires whenever the element is clicked
-        clickEvents = domEvent Click element    
+        clickEvent = domEvent Click element    
 
         -- a Dynamic (Behavior + Event) that counts clicks
-        clickCount = count clickEvents   
+        clickCount = count clickEvent   
 
     -- extract nClicks from the Reflex monad.
     nClicks <- clickCount                
